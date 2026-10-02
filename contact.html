@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>联系我 | 林枫</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft Yahei", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  color: #ffffff;
+  background:
+    linear-gradient(rgba(5, 7, 20, 0.55), rgba(5, 7, 20, 0.75)),
+    url('images/earth-pool.png') center/cover no-repeat fixed;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px;
+  background: rgba(5, 7, 20, 0.5);
+  border-bottom: 1px solid rgba(120, 160, 255, 0.25);
+}
+
+.top-nav a {
+  padding: 8px 18px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 999px;
+  background: rgba(100, 148, 255, 0.12);
+  border: 1px solid rgba(100, 148, 255, 0.35);
+}
+
+.top-nav a:hover {
+  background: rgba(100, 148, 255, 0.28);
+  box-shadow: 0 0 16px rgba(100, 148, 255, 0.45);
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 14px rgba(100, 148, 255, 0.6);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(120, 160, 255, 0.25);
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 24px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 18px rgba(100, 148, 255, 0.2);
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(100, 148, 255, 0.5);
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #dce4ff;
+  margin-bottom: 10px;
+}
+
+.form-item {
+  margin-bottom: 20px;
+}
+
+.form-item label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #dce4ff;
+}
+
+.form-item input,
+.form-item textarea {
+  width: 100%;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(120, 160, 255, 0.35);
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-item input:focus,
+.form-item textarea:focus {
+  border-color: #6494ff;
+  box-shadow: 0 0 10px rgba(100, 148, 255, 0.45);
+}
+
+.form-item textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submit-btn {
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #6494ff, #a78bff);
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 14px rgba(100, 148, 255, 0.5);
+}
+
+.submit-btn:hover {
+  box-shadow: 0 0 22px rgba(100, 148, 255, 0.7);
+}
+
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  color: #c7d2f5;
+  font-size: 14px;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  border-top: 1px solid rgba(120, 160, 255, 0.15);
+  margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="top-nav">
+  <a href="index.html">首页</a>
+  <a href="profile.html">个人简介</a>
+  <a href="project.html">项目技能</a>
+  <a href="contact.html">联系我</a>
+</div>
+
+<div class="container">
+  <h2 class="page-title">联系与留言</h2>
+
+  <div class="card">
+    <h3>联系方式</h3>
+    <p>姓名：林枫</p>
+    <p>学号后三位：117</p>
+    <p>邮箱：linfeng117@example.com</p>
+    <p>联系地址：南京审计大学</p>
+  </div>
+
+  <div class="card">
+    <h3>留言表单</h3>
+
+    <form>
+      <div class="form-item">
+        <label>你的姓名</label>
+        <input type="text" placeholder="请输入姓名" />
+      </div>
+
+      <div class="form-item">
+        <label>电子邮箱</label>
+        <input type="email" placeholder="请输入邮箱" />
+      </div>
+
+      <div class="form-item">
+        <label>留言主题</label>
+        <input type="text" placeholder="请输入留言主题" />
+      </div>
+
+      <div class="form-item">
+        <label>留言内容</label>
+        <textarea placeholder="请输入留言内容"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">发送留言</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  Designed & Built by 林枫 © 2026 | 学号后三位：117
+</footer>
+
+</body>
+</html>

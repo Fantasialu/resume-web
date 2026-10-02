@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>项目技能 | 林枫</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft Yahei", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  color: #ffffff;
+  background:
+    linear-gradient(rgba(5, 7, 20, 0.55), rgba(5, 7, 20, 0.75)),
+    url('images/meteor-night.png') center/cover no-repeat fixed;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px;
+  background: rgba(5, 7, 20, 0.5);
+  border-bottom: 1px solid rgba(120, 160, 255, 0.25);
+}
+
+.top-nav a {
+  padding: 8px 18px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 999px;
+  background: rgba(100, 148, 255, 0.12);
+  border: 1px solid rgba(100, 148, 255, 0.35);
+}
+
+.top-nav a:hover {
+  background: rgba(100, 148, 255, 0.28);
+  box-shadow: 0 0 16px rgba(100, 148, 255, 0.45);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 14px rgba(100, 148, 255, 0.6);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(120, 160, 255, 0.25);
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 24px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 18px rgba(100, 148, 255, 0.2);
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(100, 148, 255, 0.5);
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #dce4ff;
+  margin-bottom: 10px;
+}
+
+.badge-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.badge {
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  color: #ffffff;
+  background: rgba(100, 148, 255, 0.18);
+  border: 1px solid rgba(100, 148, 255, 0.45);
+  box-shadow: 0 0 8px rgba(100, 148, 255, 0.3);
+}
+
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  color: #c7d2f5;
+  font-size: 14px;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  border-top: 1px solid rgba(120, 160, 255, 0.15);
+  margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="top-nav">
+  <a href="index.html">首页</a>
+  <a href="profile.html">个人简介</a>
+  <a href="project.html">项目技能</a>
+  <a href="contact.html">联系我</a>
+</div>
+
+<div class="container">
+  <h2 class="page-title">项目与技能</h2>
+
+  <div class="card">
+    <h3>专业技能</h3>
+    <p>掌握网页前端基础，能够使用 HTML、CSS 完成静态多页面网站开发；了解数据库基本查询与 Excel 数据分析方法，可配合完成信息系统审计中的数据整理和异常筛查工作。</p>
+
+    <div class="badge-group">
+      <span class="badge">HTML</span>
+      <span class="badge">CSS</span>
+      <span class="badge">JavaScript 基础</span>
+      <span class="badge">MySQL</span>
+      <span class="badge">Excel 数据分析</span>
+      <span class="badge">信息系统审计</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>项目一：模拟企业财务数据审计实训</h3>
+    <p>项目内容：模拟企业财务数据审计实训，使用数据库工具和 Excel 对业务数据进行整理，筛查异常交易记录，并整理审计疑点清单。</p>
+    <p>主要工作：数据导入、数据排序、异常值识别、审计疑点记录、报告整理。</p>
+    <p>项目成果：完成财务数据异常筛查，并输出结构化审计工作底稿。</p>
+  </div>
+
+  <div class="card">
+    <h3>项目二：校园信息系统安全调研</h3>
+    <p>项目内容：对校园信息系统的账号权限、登录日志、操作记录进行调研，分析可能存在的越权访问、权限过大、日志记录不完整等风险。</p>
+    <p>主要工作：梳理系统功能模块，识别权限风险点，编写风险评估表。</p>
+    <p>项目成果：形成校园信息系统安全风险评估报告，并提出权限分级和操作留痕建议。</p>
+  </div>
+</div>
+
+<footer>
+  Designed & Built by 林枫 © 2026 | 学号后三位：117
+</footer>
+
+</body>
+</html>

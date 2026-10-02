@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>个人简介 | 林枫</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft Yahei", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  color: #ffffff;
+  background:
+    linear-gradient(rgba(5, 7, 20, 0.55), rgba(5, 7, 20, 0.75)),
+    url('images/crayon-earth.png') center/cover no-repeat fixed;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px;
+  background: rgba(5, 7, 20, 0.5);
+  border-bottom: 1px solid rgba(120, 160, 255, 0.25);
+}
+
+.top-nav a {
+  padding: 8px 18px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 999px;
+  background: rgba(100, 148, 255, 0.12);
+  border: 1px solid rgba(100, 148, 255, 0.35);
+}
+
+.top-nav a:hover {
+  background: rgba(100, 148, 255, 0.28);
+  box-shadow: 0 0 16px rgba(100, 148, 255, 0.45);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 14px rgba(100, 148, 255, 0.6);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(120, 160, 255, 0.25);
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 24px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 18px rgba(100, 148, 255, 0.2);
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(100, 148, 255, 0.5);
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #dce4ff;
+  margin-bottom: 8px;
+}
+
+.skill-item {
+  margin-bottom: 16px;
+}
+
+.skill-item label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #dce4ff;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid rgba(120, 160, 255, 0.25);
+}
+
+.skill-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6494ff, #a78bff);
+  border-radius: 999px;
+  box-shadow: 0 0 10px rgba(100, 148, 255, 0.6);
+}
+
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  color: #c7d2f5;
+  font-size: 14px;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  border-top: 1px solid rgba(120, 160, 255, 0.15);
+  margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="top-nav">
+  <a href="index.html">首页</a>
+  <a href="profile.html">个人简介</a>
+  <a href="project.html">项目技能</a>
+  <a href="contact.html">联系我</a>
+</div>
+
+<div class="container">
+  <h2 class="page-title">个人简介</h2>
+
+  <div class="card">
+    <h3>基本信息</h3>
+    <p>姓名：林枫</p>
+    <p>学号后三位：117</p>
+    <p>专业：计算机科学与技术</p>
+    <p>求职意向：IT审计助理</p>
+    <p>个人简介：本人为计算机专业学生，熟悉网页前端基础，了解数据库、信息系统风险识别与审计数据分析流程，具备较强的文档整理与逻辑分析能力。</p>
+  </div>
+
+  <div class="card">
+    <h3>教育背景</h3>
+    <p>2024.09 - 至今</p>
+    <p>南京审计大学 | 计算机科学与技术专业</p>
+    <p>主修课程：网页设计、数据库原理、计算机网络、信息系统审计、数据结构。</p>
+  </div>
+
+  <div class="card">
+    <h3>技能掌握</h3>
+
+    <div class="skill-item">
+      <label>HTML / CSS</label>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 70%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <label>JavaScript 基础</label>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 50%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <label>MySQL 数据库</label>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 65%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <label>Excel 审计数据分析</label>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 75%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <label>信息系统风险评估</label>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 60%;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  Designed & Built by 林枫 © 2026 | 学号后三位：117
+</footer>
+
+</body>
+</html>
